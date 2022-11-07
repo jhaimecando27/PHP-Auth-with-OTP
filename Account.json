@@ -1,15 +1,14 @@
-[ 	{
-    "user": "torres.jb8@gmail.com",
-    "password":"12345678",
-    "user_id":1,
-    "name": "John Benedict!!!"
-  
-   },
-{
-    "user": "torresjuanmiguel012@gmail.com",
-    "password":"12345678",
-    "user_id":2,
-    "name": "Juan Miguel!!"
-   
-}
+[
+    {
+        "email": "torres.jb8@gmail.com",
+        "password": "123"
+    },
+    {
+        "email": "torresjuanmiguel012@gmail.com",
+        "password": "123"
+    },
+    {
+        "email": "test",
+        "password": "123"
+    }
 ]
