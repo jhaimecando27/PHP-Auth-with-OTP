@@ -1,3 +1,37 @@
+<?php session_start();
+
+    /* User summitted a form */
+	if(isset($_POST['login'])){
+ 
+        /* Assign sumitted email and password */
+		$email = trim($_POST['email']);
+		$password = trim($_POST['password']);
+
+        /* Open database */
+        $data = json_decode(file_get_contents("Account.json"), true);
+
+        /* Check existence of sumitted data */
+        foreach($data as $row) {
+
+            /* Successful login */
+            if ($row["email"] == $email && $row["password"] == $password) {
+
+                /* Remember the user */
+                $_SESSION['user_email'] = $row["email"];
+
+                /* Go to index.php */
+                header('location:index.php');
+                exit();
+            }
+        }
+
+        /* Unsuccessful login */
+        if (isset($_SESSION['user_email']) == false) {
+            $_SESSION['message']="<span>Login Failed. User not Found!</span>";
+        }
+    }
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,9 +55,6 @@
 
                 <label for="inputPassword">Password:</label> 
                 <input id="inputPassword" type="password" name="password">
-
-                <input id="remember" type="checkbox" name="remember">
-                <label for="remember">Remeber me</label> 
 
                 <input type="submit" value="login" name="login">
             </div>
