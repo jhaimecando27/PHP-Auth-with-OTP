@@ -10,7 +10,8 @@
         /* Add key to each data */
         $newData = array(
             "email" => $email,
-            "password" => $password
+            "password" => $password,
+            "otp" => ""
         );
 
         /* Open json file */
@@ -27,8 +28,8 @@
         /* Remember the new user */
         $_SESSION['user_email'] = $email;
 
-        /* Go to index.php */
-        header('location:index.php');
+        /* Go to otp.php */
+        header('location:otp.php');
         exit();
     }
 ?>
