@@ -20,7 +20,7 @@
                 $_SESSION['user_email'] = $row["email"];
 
                 /* Go to index.php */
-                header('location:index.php');
+                header('location:otp.php');
                 exit();
             }
         }
