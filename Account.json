@@ -1,14 +1,1 @@
-[
-    {
-        "email": "torres.jb8@gmail.com",
-        "password": "123"
-    },
-    {
-        "email": "torresjuanmiguel012@gmail.com",
-        "password": "123"
-    },
-    {
-        "email": "test",
-        "password": "123"
-    }
-]
+[{"email":"torres.jb8@gmail.com","password":"123"},{"email":"torresjuanmiguel012@gmail.com","password":"123"},{"email":"test","password":"123"},{"email":"hello","password":"12"},{"email":"testing","password":"123"},{"email":"cando","password":"hello"}]
