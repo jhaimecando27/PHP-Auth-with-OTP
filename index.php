@@ -1,7 +1,8 @@
 <?php session_start(); /* Starts the session */
 
-if(!isset($_SESSION['UserData']['Username'])){
-        header("location:login.php");
+/* Tandaan lng yung email */
+if(!isset($_SESSION['user_email'])){
+        header("location:Loginform.php");
         exit;
 }
 ?>
